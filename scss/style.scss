@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Palatino';
+  src: url('/fonts/PalatinoLinotype Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  // border-left: 1px solid #fff;
+  // border-right: 1px solid #fff;
+}
+
+.heading {
+  position: relative;
+  background: url('/images/heading/background.jpg') no-repeat center/cover;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  padding-bottom: 265px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 46px;
+    max-width: 1660px;
+    margin: 0 auto;
+    color: #fff;
+    .header-nav {
+      display: flex;
+      align-items: center;
+      .header-nav__items {
+        display: flex;
+        li {
+          list-style: none;
+          margin-right: 32px;
+          a{
+            transition: 0.3s;
+            &:hover {
+              color: rgb(234, 171, 250);
+              text-shadow: 0 3px 3px rgb(61, 61, 61);
+            }
+          }
+        }
+      }
+      .burger__line {
+        display: none;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .heading__content {
+    margin-left: -55px;
+    .heading__pre-title {
+      font-family: 'Palatino', sans-serif;
+      font-weight: normal;
+      color: #fff;
+      font-size: 42px;
+      line-height: 44px;
+      margin-top: 170px;
+    }
+    .heading__title {
+      font-size: 64px;
+      line-height: 68px;
+      color: #fff;
+      width: 755px;
+      margin-top: 28px;
+    }
+    .heading__text {
+      font-size: 23px;
+      line-height: 32px;
+      width: 710px;
+      color: #fff;
+      font-weight: normal;
+    }
+  }
+  .heading-buttons {
+    margin: 100px 0 0 -10px;
+    a {
+      padding: 25px 52px;
+      border-radius: 36px;
+    }
+    .story__btn {
+      background-color: #f42267;
+      margin-right: 22px;
+    }
+    .more__btn {
+      background-color: #67328d;
+    }
+  }
+  .heading-person {
+    position: absolute;
+    bottom: -4px;
+    right: 310px;
+  }
+}
