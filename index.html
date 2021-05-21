@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
   <link rel="stylesheet" href="css/style.css">
   <title>BlueRex</title>
 </head>
+
 <body>
+
   <div class="modal-wrapper">
     <div class="modal-card">
       <h2>Modal Title</h2>
@@ -16,12 +19,14 @@
       <button class="close-button">OK</button>
     </div>
   </div>
-  
+
   <section class="heading">
     <header class="header">
-      <a href="index.html" class="logo">
-        <img src="images/header-logo.png" alt="main logo">
-      </a>
+      <div>
+        <a href="index.html">
+          <img src="images/header-logo.png" alt="main logo" class="logo">
+        </a>
+      </div>
       <nav class="header-nav">
         <ul class="header-nav__items">
           <li class="header-nav__item"><a href="#">Home</a></li>
@@ -32,29 +37,41 @@
           <li class="header-nav__item"><a href="#">FAQ</a></li>
           <li class="header-nav__item"><a href="#">Contact</a></li>
         </ul>
-        <div class="mobile-nav"></div>
-        <div class="mobile-nav__btn">
-          <div class="burger__line"></div>
-          <div class="burger__line"></div>
-          <div class="burger__line"></div>
-        </div>
       </nav>
+      <div class="mobile-nav__btn">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
     </header>
+    <div class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item"><a href="#">Home</a></li>
+        <li class="mobile-nav__item"><a href="#">About</a></li>
+        <li class="mobile-nav__item"><a href="#">Features</a></li>
+        <li class="mobile-nav__item"><a href="#">Product</a></li>
+        <li class="mobile-nav__item"><a href="#">Reviews</a></li>
+        <li class="mobile-nav__item"><a href="#">FAQ</a></li>
+        <li class="mobile-nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </div>
     <div class="container">
       <div class="heading__content">
-        <h4 class="heading__pre-title">We are best and creative agency</h4>
-        <h1 class="heading__title">We	turn creative ideas into your business.</h1>
-        <p class="heading__text">
-          Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
-          Sed sodales enim ut rhoncus lorem ipsum ese terds.
-        </p>
-      </div>
-      <div class="heading-buttons">
-        <button href="#" class='story__btn'>OUR STORY</button>
-        <button href="#" class='more__btn'>READ MORE</button>
+        <div>
+          <h4 class="heading__pre-title">We are best and creative agency</h4>
+          <h1 class="heading__title">We turn creative ideas into your business.</h1>
+          <p class="heading__text">
+            Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
+            Sed sodales enim ut rhoncus lorem ipsum ese terds.
+          </p>
+          <div class="heading-buttons">
+            <button href="#" class='story__btn'>OUR STORY</button>
+            <button href="#" class='more__btn'>READ MORE</button>
+        </div>
       </div>
       <div class="heading-person">
         <img src="images/heading/heading-person.png" alt="">
+      </div>
       </div>
     </div>
   </section>
@@ -64,31 +81,81 @@
       <div class="services-wrapper">
         <div class="services__info">
           <h4 class="services__pretitle">Dream Big Inspire the World</h4>
-          <h1 class="services__title">We	turn creative ideas into your business.</h1>
+          <h1 class="services__title">We turn creative ideas into your business.</h1>
           <div class="services__buttons">
             <button class="service__btn">WEB DESIGN</button>
             <button class="service__btn">MOBILE APP</button>
             <button class="service__btn">BRANDING</button>
           </div>
           <p class="services__text">
-            Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+            Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese
+            terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum
+            ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
           </p>
-          <button class="read-more__button">READ MORE</button>
-          <div class="read-more__button-shadow"></div>
+          <div class="read-more">
+            <button class="read-more__button">READ MORE</button>
+            <div class="read-more__button-shadow"></div>
+          </div>
         </div>
-        <div class="services__image">
-          <img src="images/services/watch.png" alt="clock image">
+        <div class="services__image-wrapper">
+          <img src="images/services/watch.png" alt="clock image" class="services__image">
         </div>
       </div>
     </div>
   </section>
-  
+
   <section class="achievements">
     <div class="container">
-      
+      <div class="achievements-wrapper">
+        <div class="active__item"></div>
+        <div id="item-one" class="achievements__item">
+          <div class="achievements__icon">
+            <img src="images/achievements/icon-megafon.png" alt="">
+          </div>
+          <h1 class="achievements__title">500+</h1>
+          <h4 class="achievements__subtitle"><span>Successfully</span> completed projects</h4>
+          <p class="achievements__text">
+            Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+            Sed sodales enim ut rhoncus lorem ipsum ese terds. 
+          </p>
+        </div>
+        <div id="item-two" class="achievements__item">
+          <div class="achievements__icon">
+            <img src="images/achievements/icon-megafon.png" alt="">
+          </div>
+          <h1 class="achievements__title">254+</h1>
+          <h4 class="achievements__subtitle"><span>Highly</span> specialised employees</h4>
+          <p class="achievements__text">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+            Sed sodales enim ut rhoncus lorem ipsum ese terds. </p>
+        </div>
+        <div id="item-three" class="achievements__item">
+          <div class="achievements__icon">
+            <img src="images/achievements/icon-megafon.png" alt="">
+          </div>
+          <h1 class="achievements__title">45+</h1>
+          <h4 class="achievements__subtitle"><span>Awards</span> 
+            around the world</h4>
+          <p class="achievements__text">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+            Sed sodales enim ut rhoncus lorem ipsum ese terds. </p>
+        </div>
+      </div>
+    </div>
+    <div class="grow-together">
+      <div class="container">
+        <h4 class="pretitle">Let's Grow Together</h4>
+        <h1 class="title">We	turn creative ideas into your business.</h1>
+        <p class="text">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. </p>
+        <div class="read-more">
+          <button class="read-more__button">READ MORE</button>
+          <div class="read-more__button-shadow"></div>
+        </div>
+      </div>
     </div>
   </section>
 
+  
+
   <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -3,6 +3,19 @@ window.addEventListener('DOMContentLoaded', () => {
 // Heading
 
 
+// Mobile navigation
+
+  const mobileNavBtn = document.querySelector('.mobile-nav__btn'),
+        mobileNav = document.querySelector('.mobile-nav')
+
+  mobileNavBtn.addEventListener('click', () => {
+    if(mobileNav.style.display === 'none') {
+      mobileNav.style.display = 'block'
+    } else {
+      mobileNav.style.display = 'none'
+    }
+  })
+
 
 // Services
 
@@ -11,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
         storyBtn = document.querySelector('.story__btn'),
         readMoreBtn = document.querySelector('.more__btn')
         closeModalBtn = document.querySelector('.close-button')
+        
 
   const openModal = () => {
     modal.style.display = 'flex'
@@ -45,4 +59,9 @@ window.addEventListener('DOMContentLoaded', () => {
       activeBtn(i)
     })
   })
+
+
+// Achievements  
+
+
 })
