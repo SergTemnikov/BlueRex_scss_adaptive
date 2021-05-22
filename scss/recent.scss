@@ -1,0 +1,39 @@
+.recent{
+  background-color: #f1f1f1;
+  padding: 75px 0 115px;
+  &__heading{
+    margin: 0 auto;
+    width: 960px;
+    text-align: center;
+    .recent__nav{
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+    }
+  }
+  &__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: 600;
+  }
+  &__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 45px;
+  }
+  &__items{
+    margin: 0 -19px;
+  }
+  &__items-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    padding: 0 17px 34px;
+  }
+  .read-more{
+    margin: 55px auto 0;
+  }
+}

@@ -1,0 +1,62 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder { color: #fff; }
+  &:-moz-placeholder           { color: #fff; }
+  &::-moz-placeholder          { color: #fff; }
+  &:-ms-input-placeholder      { color: #fff; }  
+}
+
+.help{
+  background: url('/images/help/background.jpg') no-repeat center / cover;
+  padding: 85px 0;
+  &__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+  }
+  &__input{
+    width: 495px;
+    padding: 24px 42px;
+    margin-right: 20px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: #f16e99;
+    color: #fff;
+    @include placeholder()
+  }
+  .read-more{
+    margin-top: -15px;
+    button{
+      background-color: #4b2d7f;
+    }
+    &__button-shadow{
+      background-color: #a57ee9;
+    }
+  } 
+  &__heading{
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: 600;
+    color: #fff;
+  }
+  &__subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+  }
+  &__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 30px;
+  }
+}

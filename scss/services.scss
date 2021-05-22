@@ -1,0 +1,48 @@
+.services {
+  position: relative;
+  padding-top: 65px;
+  background: url('/images/services/world-map-bg.png') no-repeat;
+  background-position: center;
+  .services-wrapper {
+    display: flex;
+    padding-top: 25px;
+    .services__info {      
+      color: #484848;
+      .services__pretitle {
+        font-family: 'Palatino';
+        font-size: 33px;
+        line-height: 35px;
+        font-weight: normal;
+        max-width: 390px;
+      }
+      .services__title {
+        padding-top: 22px;
+        max-width: 578px;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 52px;
+      }
+      .section__nav-buttons{
+        margin: 30px 0 0;
+      }
+      .services__text {
+        margin-top: 24px;
+        width: 580px;
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .read-more {
+        margin-top: 55px;
+        .read-more__button-shadow{
+          text-align: center;
+        }
+      }
+    }
+    .services__image-wrapper {
+      margin-left: 200px;
+    }
+  }
+}
