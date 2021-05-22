@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Services
 
-  const serviceBtn = document.querySelectorAll('.service__btn'),
+  const sectionBtn = document.querySelectorAll('.section__nav-btn'),
         modal = document.querySelector('.modal-wrapper'),
         storyBtn = document.querySelector('.story__btn'),
         readMoreBtn = document.querySelector('.more__btn')
@@ -45,16 +45,16 @@ window.addEventListener('DOMContentLoaded', () => {
     closeModal()
   })
 
-  serviceBtn[0].classList.add('active')
+  sectionBtn[0].classList.add('active')
 
   const activeBtn = (i) => {
-    serviceBtn.forEach(btn => {
+    sectionBtn.forEach(btn => {
       btn.classList.remove('active')
     })
-    serviceBtn[i].classList.add('active')
+    sectionBtn[i].classList.add('active')
   }
 
-  serviceBtn.forEach((btn, i) => {
+  sectionBtn.forEach((btn, i) => {
     btn.addEventListener('click', () => {
       activeBtn(i)
     })
