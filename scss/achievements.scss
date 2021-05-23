@@ -5,6 +5,12 @@
     margin: 0 -100px;
     display: flex;
     justify-content: center;
+    @media (max-width: 1440px){
+      margin: 0;
+    }
+    @media (max-width: 767px){
+      flex-direction: column;
+    }
     .achievements__item {
       padding: 75px 100px 100px;
       cursor: pointer;
@@ -14,27 +20,61 @@
       align-items: center;
       font-family: 'Montserrat';
       color: #fff;
+      @media (max-width: 1792px){
+        padding: 60px 60px 60px;
+      }
+      @media (max-width: 1440px){
+        padding: 40px 20px;
+      }
+      @media (max-width: 767px){
+        padding: 0 0 10px;
+      }
       h1{
         margin-top: 15px;
         font-weight: 600;
         font-size: 50px;
         line-height: 62px;
+        max-width: 150px;
+        @media (max-width: 1440px){
+          font-size: 42px;
+          line-height: 44px;
+        }
+        @media (max-width: 930px){
+          font-size: 32px;
+          line-height: 34px;
+        }
       }
       h4 {
         margin-top: 5px;
         text-align: center;
-        width: 255px;
         font-size: 25px;
+        @media (max-width: 1440px){
+          font-size: 20px;
+          line-height: 22px;
+        }
+        @media (max-width: 930px){
+          font-size: 16px;
+          line-height: 18px;
+        }
         span {
           font-size: 30px;
+          @media (max-width: 1440px){
+            font-size: 24px;
+          }
+          @media (max-width: 930px){
+            font-size: 18px;
+          }
         }
       }
       p {
         margin-top: 15px;
         color: #7e7e7e;
-        width: 340px;
+        max-width: 340px;
         line-height: 30px;
         text-align: center;
+        @media (max-width: 767px){
+          line-height: 17px;
+        }
       }
     }
     #item-two {
@@ -44,6 +84,12 @@
   .grow-together{
     padding: 90px 0 80px;
     background: url('/images/achievements/grow-together-bg.jpg') no-repeat center / cover;
+    @media (max-width: 1440px){
+      padding: 60px 0 60px;
+    }
+    @media (max-width: 930px){
+      padding: 20px 0 50px;
+    }
     .pretitle{
       font-family: 'Palatino', sans-serif;
       font-weight: normal;
@@ -51,6 +97,15 @@
       font-size: 50px;
       line-height: 52px;
       text-align: center;
+      
+      @media (max-width: 1440px){
+        font-size: 38px;
+        line-height: 40px;
+      }
+      @media (max-width: 767px){
+        font-size: 24px;
+        line-height: 26px;
+      }
     }
     .title{
       font-family: "Montserrat";
@@ -60,6 +115,20 @@
       color: #fff;
       text-align: center;
       margin-top: 16px;
+      @media (max-width: 1440px){
+        font-size: 44px;
+        line-height: 46px;
+        margin: 16px auto;
+      }
+      @media (max-width: 930px){
+        font-size: 36px;
+        line-height: 38px;
+      }
+      @media (max-width: 767px){
+        font-size: 26px;
+        line-height: 28px;
+        max-width: 700px;
+      }
     }
     .text{
       font-family: "Montserrat";
@@ -68,9 +137,43 @@
       color: #fff;
       text-align: center;
       margin-top: 43px;
+      padding: 0 10px;
+      @media (max-width: 1440px){
+        max-width: 1000px;
+        margin: 30px auto;
+      }
+      @media (max-width: 767px){
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 600px;
+        margin: 15px auto;
+      }
     }
     .read-more {
-      margin: 55px auto 0;
+      margin-top: 55px;
+      @media (max-width: 1080px){
+        margin: 0 auto;
+        text-align: center;
+      }
+      button{
+        @media (max-width: 767px){
+          padding: 10px 15px;
+        }
+      }
+      .read-more__button-shadow{
+        text-align: center;
+        @media (max-width: 767px){
+          padding: 18px 27px;
+          width: 114px;
+          margin: -27px auto;
+        }
+      }
     }
+  }
+  &__icon {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    
   }
 }
