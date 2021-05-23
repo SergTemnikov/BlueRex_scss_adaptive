@@ -16,3 +16,17 @@
   margin: 0 auto;
   text-align: center;
 }
+
+@media (max-width: 1950px) {
+
+}
+
+@media (max-width: 1760px) {
+
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+}

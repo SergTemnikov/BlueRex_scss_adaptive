@@ -5,15 +5,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Mobile navigation
 
-  const mobileNavBtn = document.querySelector('.mobile-nav__btn'),
-        mobileNav = document.querySelector('.mobile-nav')
+  const mobileNavBtn = document.querySelector('.heading__burger'),
+        mobileNav = document.querySelector('.header-nav'),
+        body = document.querySelector('body')
 
   mobileNavBtn.addEventListener('click', () => {
-    if(mobileNav.style.display === 'none') {
-      mobileNav.style.display = 'block'
-    } else {
-      mobileNav.style.display = 'none'
-    }
+    mobileNavBtn.classList.toggle('active')
+    mobileNav.classList.toggle('active')
+    body.classList.toggle('lock')
   })
 
 
